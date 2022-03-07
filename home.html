@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My website</title>
     <link rel="stylesheet" href="style.css">
+    <script>  
+       
+  function login(){
+        var user = document.loginform.user_name.value;
+        var pass = document.loginform.pass_word.value;
+  if(user == "" || pass == ""){
+          alert("Shkruani emrin dhe passwordin!!!");
+     }else{
+  if((user == "Festim" || user == "FESTIM") && pass == "Dibrani"){
+          document.loginform.submit();
+    }else{
+         alert("Ju lutem shkruani te dhenat e sakta");
+  }
+       }
+           }
+        </script>  
 </head>
 <body>
     <section id="header">
@@ -32,10 +48,15 @@
                 <h1>Hello, <span></span></h1>
                 <h1>My name is <span></span></h1>
                 <h1>Festim<span></span></h1>
-                <a href="#" type="button" class="cta">Portfolio</a>
+                <a href="#" type="button" class="cta">Log In Below </a>
+                <form id="login" name="loginform" action="thanks.html">
+                    <input  type="text" name="user_name" placeholder="Shkruaj emrin:"/>
+                    <input  type="password" name="pass_word" placeholder="Shkruaj passwordin:"/>
+                    <input  type="button" value="login"  onclick="login()"/>
+                  </form>
+                </div>
             </div>
             <div class="setup"><img src="./Images/Programer-start.jpg"></div>
-        </div>
     </section>
 
 <!-- End Hero Section-->

@@ -96,9 +96,10 @@ img{
 #hero .setup{
     width: 500px;
     height: 500px;
-    margin-left: 400px;
+    margin-left: 800px;
     border-radius: 10px;
     overflow: hidden;
+    margin-top: -500px;
 }
 
 #hero::after{
@@ -156,7 +157,10 @@ img{
     background-color: crimson;
     animation: text_reveal_box 1s ease;
     animation-delay: 0.3s;
-
+}
+#hero form input {
+margin-top: 20px;  
+height: 40px;  
 }
 /*End hero section*/
 #services{
@@ -366,6 +370,8 @@ img{
     color: white;
     background-color: crimson;
 }
+
+
 #about .col-left .about-img{
     position: relative;
 }
@@ -483,11 +489,9 @@ margin-bottom: 5px;
     }
 }
 
-    #header .container .nav-bar .nav-list{
+    @media screen and (min-width:0px) and (max-width:414px){
+        #header .header .nav-bar .brand h1{
+            width: 200px;
+            font-size: 20px;
+        }
     }
-
-    @media only screen 
-    and (max-width:413px)
-    and (device-width : 414px) 
-    and (device-height : 896px) 
-    and (-webkit-device-pixel-ratio : 2) { }
